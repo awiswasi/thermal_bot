@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>raspberrypi_video</name>
+  <version>0.1.0</version>
+  <description>
+    Your package description here.
+  </description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>MIT License</license>
+
+  <!-- Package dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>roslib</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <!-- Add other dependencies here as needed -->
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+
+  
+  <!-- Package export information -->
+  <export>
+    <node name="raspberrypi_video" pkg="raspberrypi_video" type="raspberrypi_video_node"/>
+  </export>
+</package>
