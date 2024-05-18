@@ -1,0 +1,14 @@
+[Unit]
+Description=Start ROS 2 Joy Node and Motor Control Script
+After=network.target
+
+[Service]
+Type=simple
+User=thermalbot
+ExecStart=/home/thermalbot/ros2_ws/src/thermalbot/control/manual_control.sh
+Restart=on-failure
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/thermalbot/.Xauthority
+
+[Install]
+WantedBy=multi-user.target
